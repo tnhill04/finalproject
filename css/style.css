@@ -2,11 +2,7 @@
 .flexParent {
   background-color: rebeccapurple;
   padding: 20px;
-  min-height: 300px;
-  margin-bottom: 20px;
-  margin-top: -8px;
-  margin-left: -8px;
-  margin-right: -8px;
+  /* min-height: 300px; */
   gap: 20px;
   display: flex;
   /*   flex-direction: column; */
@@ -28,9 +24,9 @@
   justify-content: center;
   align-items: center;
   /*   flex: 1; */
-  flex-grow: ;
+  /* flex-grow: ;
   flex-shrink: ;
-  flex-basis: ;
+  flex-basis: ; */
   /*   flex: 0 1 300px; */
   /*   align-self: flex-end; */
 }
@@ -46,8 +42,10 @@ header .nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100px;
+  width: 480px;
 }
+
+
 
 .logo {
   display: flex;
@@ -56,13 +54,15 @@ header .nav {
    flex: 1;
 }
 
-.anotherDiv,
-.para {
-  flex: 1 0 calc(100% - 40px);
+.anotherDiv {
+  flex: 1;
   justify-content: center;
   align-content: center;
   height: auto;
 }
+
+
+
 
 
 /* Global Styling */
@@ -80,14 +80,14 @@ body {
   position: relative;
 }
 
-@media (min-width: 1000px) {
+
 	
 	.hero-image {
 		
 		height: 70vh;
 		
 	}
-}
+
 
 .hero-text {
   text-align: center;
@@ -114,37 +114,25 @@ ul a {
   color: black;
 }
 
-body {
-
+.main-footer {
+	background: #FFE4C4;
+	padding: 2em 0;
+	text-align: center;
 }
+
+
 
 /* Media Query */
 
-@media (max-width: 566px) {
+@media (max-width: 320px) {
+
+	.logo h1 {
+		font-size: medium;
+	}
+	
 	.flexParent {
 		
-	flex-direction: column;
-	align-items: center;
-	display: flex;
-	
 	}
-	
-	.flexParent ul li {
-		
-	align-items: center;
-	display: flex;
-	 padding: 5px;
-	
-	}
-  
-  	.flexChild {
-      
-	margin: 5px;
-    padding: 20px 160px;
-    display: flex;
-      
-	}
-	
 
   
 }
