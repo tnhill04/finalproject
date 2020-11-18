@@ -1,6 +1,6 @@
 /* Parent Styling */
 .flexParent {
-  background-color: rebeccapurple;
+  background-color: blue;
   padding: 20px;
   /* min-height: 300px; */
   gap: 20px;
@@ -42,7 +42,7 @@ header .nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 480px;
+  width: 47vw;
 }
 
 
@@ -61,6 +61,21 @@ header .nav {
   height: auto;
 }
 
+.para {
+	  max-width: 100%;
+		height: auto;
+		overflow: hidden;
+}
+
+.para img {
+	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
 
 
 
@@ -72,7 +87,7 @@ body {
 }
 
 .hero-image {
-  background-image: url("../img/me.jpg");
+  background-image: url("../img/image1.jpg");
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -105,6 +120,7 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 ul li {
   margin-left: 20px;
@@ -124,7 +140,7 @@ ul a {
 
 /* Media Query */
 
-@media (max-width: 320px) {
+@media (max-width: 1440px) {
 
 	.logo h1 {
 		font-size: medium;
@@ -133,6 +149,27 @@ ul a {
 	.flexParent {
 		
 	}
+	
+	.para {
+		
+		max-width: 100%;
+		height: auto;
+		overflow: hidden;
+ 
+	}
+	
+		header .nav{
+		
+		width: 45.2vw;
+	}
 
-  
+}
+
+
+@media (max-width: 1024px){
+	
+	header .nav{
+		
+		width: 43.2vw;
+	}
 }
